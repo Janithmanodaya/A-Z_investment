@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Z Investment - Real Estate Solutions</title>
+    
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Custom CSS */
+        .call-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .hero-section {
+            height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('1.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .property-card {
+            transition: transform 0.3s;
+        }
+        
+        .property-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .contact-section {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Call Button -->
+<a href="tel:+94773691167" class="btn btn-success btn-lg rounded-pill call-btn">
+    <i class="fas fa-phone"></i> Call Now
+</a>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">A-Z Investment</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#properties">Properties</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section" id="home">
+    <div class="text-center">
+        <h1 class="display-4 mb-4">Your Trusted Real Estate Partner</h1>
+        <p class="lead">Premium Land Investments in Kalutara</p>
+        <a href="#contact" class="btn btn-primary btn-lg mt-3">Get Started</a>
+    </div>
+</section>
+
+<!-- Properties Section -->
+<section id="properties" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Featured Properties</h2>
+        <div class="row g-4">
+            <!-- Property Card 1 -->
+            <div class="col-md-4">
+                <div class="card property-card">
+                    <img src="1.jpg" class="card-img-top" alt="Beachfront Property">
+                    <div class="card-body">
+                        <h5 class="card-title">Beachfront Land</h5>
+                        <p class="card-text">Prime beachfront property in Aluthgama (1.jpg)</p>
+                        <a href="tel:+94773691167" class="btn btn-primary">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property Card 2 -->
+            <div class="col-md-4">
+                <div class="card property-card">
+                    <img src="2.jpg" class="card-img-top" alt="Mountain View Land">
+                    <div class="card-body">
+                        <h5 class="card-title">Mountain View Land</h5>
+                        <p class="card-text">Scenic mountain view plot in Kalutara (2.jpg)</p>
+                        <a href="tel:+94773691167" class="btn btn-primary">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property Card 3 -->
+            <div class="col-md-4">
+                <div class="card property-card">
+                    <img src="3.jpg" class="card-img-top" alt="Commercial Plot">
+                    <div class="card-body">
+                        <h5 class="card-title">Commercial Plot</h5>
+                        <p class="card-text">High-value commercial land in city center (3.jpg)</p>
+                        <a href="tel:+94773691167" class="btn btn-primary">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Contact Us</h2>
+                <p class="lead">Get in touch for premium land investments</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Sri Lanka, Kalutara, Aluthgama
+                    </li>
+                    <li class="mb-3">
+                        <i class="fas fa-phone me-2"></i>
+                        <a href="tel:+94773691167">+94 77 369 1167</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <!-- Add contact form here if needed -->
+                <div class="mapouter">
+                    <!-- Add Google Map embed code here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <p>&copy; 2023 A-Z Investment. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- JS Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Close mobile menu on click
+    document.querySelectorAll('.nav-link').forEach(navLink => {
+        navLink.addEventListener('click', () => {
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            if (navbarCollapse.classList.contains('show')) {
+                new bootstrap.Collapse(navbarCollapse).toggle();
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
